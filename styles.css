@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.card {
+  border: 1px solid #e2e2e2;
+  transition: 0.3s;
+  margin: 10px;
+  /* padding: 20px; */
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.card-header {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-body {
+  text-align: center;
+  text-align: left;
+  font-size: 15px;
+  /* background-color: aqua; */
+  padding: 0px 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.card-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns {
+  /* background-color: khaki; */
+}
+
+.card-price {
+  font-size: 35px;
+  font-weight: bold;
+  /* margin-top: 5px; */
+}
+
+i {
+  background-color: #4ed178;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .container {
+    height: initial;
+  }
+
+  i {
+    font-size: 25px;
+  }
+}
